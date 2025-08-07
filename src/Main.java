@@ -9,11 +9,35 @@ public class Main {
                      --> String, array, object
         */
 
-        int one = 1;
-        int two = 2;
-        int three = 3;
-        int four = 4;
+        int age = 30;
 
-        System.out.println(one + "\n" + two + "\n" + three + "\n" + four);
+        char grade = 'A';
+
+        String name = "Clement";
+
+        boolean isStudent = true;
+
+
+        if(isStudent){
+            System.out.println("You are a student");
+
+        } else {
+            System.out.println("you are not student");
+        }
+
+        int items = 50;
+        float costPerItem = 9.99f;
+        float totalCost = items * costPerItem;
+        char currency = '$';
+        String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        System.out.println("The length of the txt string is: " + txt.length());
+
+// Print variables
+        System.out.println("Number of items: " + items);
+        System.out.println("Cost per item: " + costPerItem + currency);
+        System.out.println("Total cost = " + totalCost + currency);
+        System.out.println(isStudent);
+
+        System.out.println(age +" "+ grade + " " + name);
     }
 }
