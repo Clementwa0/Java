@@ -19,9 +19,28 @@ Classes and Objects:
 */
 public class Oops {
     int x = 5;
+    int k;
+    int b;
+
+//    final keyword
+    final int y = 10;
+    final int z = 20;
+
+    // constructors -- > special method used to initialize objects
+
+    public Oops(){
+        b = 10;
+    }
 
     public static void main (String[] args) {
-        Oops myObj = new Oops(); //new Oops() creates a new instance(object) of the Oops class
+        Oops myObj = new Oops();
+        Oops myObj1 = new Oops();
+        myObj.k = 40;
+        myObj1.x = 30; //new Oops() creates a new instance(object) of the Oops class.
         System.out.println(myObj.x);
- }
+        System.out.println(myObj.b);
+        System.out.println(myObj.k);
+        System.out.println(myObj1.x);
+        System.out.println(myObj1.z);
+    }
 }
