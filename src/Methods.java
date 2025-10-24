@@ -10,6 +10,9 @@ public class Methods {
      * - Takes a String (fname) and an integer (age) as parameters.
      * - Prints a message and performs a simple age check.
      */
+    static void  greet(){
+        System.out.println("Hello there!");
+    }
     static void myMethod(String fname, int age) {
         System.out.println(fname + " is " + age + " years old.");
 
@@ -54,15 +57,22 @@ public class Methods {
      * Main Method - Entry Point
      * ===============================
      */
+
+
+    static int addnums(int a, int b){
+        return a + b;
+    }
+
     public static void main(String[] args) {
 
+        greet();
         // Calling the first static method with different arguments
         myMethod("Jenney", 5);  // Expected: Access Denied
         myMethod("Anja", 31);   // Expected: Access Granted
 
         // Calling overloaded static method to perform addition
         int sumResult = myMethod(5, 3);
-
+        int sum = addnums(4,3);
         // Creating an object to call non-static methods
         Methods myCar = new Methods();
 
@@ -72,6 +82,7 @@ public class Methods {
 
         // Display the sum result
         System.out.println("The sum is: " + sumResult);
+        System.out.println("The sum is: " + sum);
     }
 }
 
@@ -82,6 +93,7 @@ public class Methods {
  * ==============================================
  * 1. Parameters → Act as variables inside a method.
  *    Example: static void myMethod(String fname, int age)
+ *
  *
  * 2. Arguments → The actual values passed to a method.
  *    Example: myMethod("Jenney", 5);

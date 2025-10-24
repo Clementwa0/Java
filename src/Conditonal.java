@@ -7,7 +7,7 @@ public class Conditonal {
         System.out.println("Please enter your code:\n");
         int doorCode = scanner.nextInt();
 
-        System.out.println(doorCode == 1337 ? "you may Enter" : "You are not allowed to order");
+        System.out.println(doorCode == 1337 ? "you may Enter" : "You are not allowed to enter");
 
         int myNum = 10;
 
